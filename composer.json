@@ -1,0 +1,22 @@
+{
+    "name": "cirolaferrara/mldonkey-sender",
+    "type": "library",
+    "description": "Send command to mldonkey server",
+    "keywords": [
+        "mldonkey",
+        "p2p"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-curl": "*",
+        "ext-sockets": "*",
+        "ext-readline": "*",
+        "php-curl-class/php-curl-class": "^8.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "MlDonkeySender\\": "src/"
+        }
+    }
+}
