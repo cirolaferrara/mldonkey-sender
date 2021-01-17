@@ -9,14 +9,14 @@ use Curl\Curl;
 
 class MlDonkeyServerDownload
 {
-    private MlDonkeyServerData $mldonkeyServerData;
+    private $mldonkeyServerData;
 
     /**
      * UserMldonkeyAuth constructor.
      *
      * @param MlDonkeyServerData $mldonkeyServerData
      */
-    public function __construct(MlDonkeyServerData $mldonkeyServerData)
+    public function __construct($mldonkeyServerData)
     {
         $this->mldonkeyServerData = $mldonkeyServerData;
     }
@@ -26,7 +26,7 @@ class MlDonkeyServerDownload
      *
      * @param array $ed2kLinks
      */
-    public function download(array $ed2kLinks)
+    public function download($ed2kLinks)
     {
         $url = 'http://'.$this->mldonkeyServerData->ip;
         $url .= ':'.$this->mldonkeyServerData->port.'/submit?q=';

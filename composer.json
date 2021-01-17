@@ -12,10 +12,5 @@
         "ext-curl": "*",
         "ext-sockets": "*",
         "php-curl-class/php-curl-class": "^8.9"
-    },
-    "autoload": {
-        "psr-4": {
-            "MlDonkeySender\\": "src/"
-        }
     }
 }

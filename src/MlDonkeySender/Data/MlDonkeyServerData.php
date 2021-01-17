@@ -7,14 +7,14 @@ namespace MlDonkeySender\MlDonkeySender\Data;
 final class MlDonkeyServerData
 {
     /** @var string */
-    public string $ip = '127.0.0.1';
+    public $ip = '127.0.0.1';
 
     /** @var int */
-    public int $port = 4080;
+    public $port = 4080;
 
     /** @var string */
-    public string $username;
+    public $username;
 
     /** @var string */
-    public string $password;
+    public $password;
 }
